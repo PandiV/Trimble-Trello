@@ -1,0 +1,15 @@
+@import "../abstracts/abstracts";
+
+.add-new {
+  @include flexCenter();
+  margin: 0.5rem;
+  border-radius: 8px;
+  & > * {
+    padding: 0.25rem;
+  }
+  &:hover {
+    background-color: rgba(9, 30, 66, 0.08);
+    color: #172b4d;
+    cursor: pointer;
+  }
+}

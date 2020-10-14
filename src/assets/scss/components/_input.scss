@@ -1,0 +1,16 @@
+@import "../abstracts/variables";
+
+input,
+textarea {
+  border-radius: $border-radius;
+  border: 2px solid $gray;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid $primary;
+  box-shadow: 0 0 0;
+  outline: 0;
+}

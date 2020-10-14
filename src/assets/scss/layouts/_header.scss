@@ -1,0 +1,61 @@
+@import "../abstracts/abstracts";
+
+header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0.5rem;
+  border-bottom: 1px solid $gray;
+}
+.logo {
+  @include flexCenter();
+  padding: 0 1rem;
+  & > * {
+    padding-left: 0.5rem;
+  }
+}
+.hamburger {
+  padding: 0 0.5em;
+  font-size: 1.5em;
+  line-height: 50px;
+  display: inline-block;
+  z-index: 2;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+nav:hover {
+  display: block;
+}
+nav p {
+  display: block;
+  line-height: 50px;
+  text-align: center;
+}
+
+.hamburger:hover ~ nav {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  nav {
+    position: static;
+    display: flex;
+    background: none;
+    clear: none;
+    flex: 1;
+    justify-content: flex-end;
+  }
+  nav:hover {
+    display: flex;
+  }
+  nav p {
+    padding: 0 1em;
+  }
+}

@@ -1,0 +1,12 @@
+// Flex box
+
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexWithDirection($direction) {
+  display: flex;
+  flex-direction: $direction;
+}

@@ -1,0 +1,43 @@
+@import "abstracts/variables";
+
+._fr {
+  float: right;
+}
+
+._df {
+  display: flex;
+}
+
+._jc-sb {
+  justify-content: space-between;
+}
+
+._capitalize {
+  text-transform: capitalize;
+}
+
+._jc-fe {
+  justify-content: flex-end;
+}
+
+._mx-25-50 {
+  margin: 0.25rem 0.5rem;
+}
+
+._h-pointer {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+._pb-1 {
+  padding-bottom: 1rem;
+}
+
+.tilt {
+  border: 2px solid $gray-3;
+  border-radius: 10px;
+  transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+}

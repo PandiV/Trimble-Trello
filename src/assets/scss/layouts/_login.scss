@@ -1,0 +1,33 @@
+@import "../abstracts/abstracts";
+
+.login {
+  @include flexCenter();
+  flex-direction: column;
+  background: $gray;
+  height: 100vh;
+  &-header {
+    @include flexWithDirection(row);
+    align-items: center;
+    margin: 1rem 0rem;
+  }
+
+  &-form {
+    border-radius: $border-radius;
+    padding: 25px 40px;
+    background: $white;
+    border: 1px solid $gray;
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    form {
+      @include flexWithDirection(column);
+      justify-content: space-between;
+      & > * {
+        margin: 0.5rem 0;
+        height: 40px;
+      }
+    }
+  }
+}
